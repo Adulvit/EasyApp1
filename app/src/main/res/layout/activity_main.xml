@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context="com.betagro.adulvitc.easyapp.MainActivity">
 
+
     <!--Toolbar-->
     <android.support.v7.widget.Toolbar
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
@@ -19,12 +20,25 @@
 
 
 
-
-    <!--Content Fragment-->
-    <FrameLayout
-        android:id="@+id/contentFramentMain"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <!--Wall Paper-->
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--Content Fragment-->
+        <FrameLayout
+            android:id="@+id/contentFramentMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
 
 
 </LinearLayout>
