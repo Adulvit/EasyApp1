@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import com.betagro.adulvitc.easyapp.fragment.ChooseImageFragment;
 import com.betagro.adulvitc.easyapp.fragment.MainFragment;
@@ -30,8 +32,21 @@ public class MainActivity extends AppCompatActivity {
 //        Toolbar Controller
         toolbarController();
 
+//        Exit Controller
+        exitController();
 
     }   // Main Method
+
+    private void exitController() {
+        TextView textView = (TextView) findViewById(R.id.txtExit);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+    }
 
 
     @Override
