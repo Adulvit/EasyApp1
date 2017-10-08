@@ -31,10 +31,18 @@
             android:src="@drawable/login" />
 
         <!--Button-->
-        <Button
+        <ImageView
+            android:src="@drawable/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Choose Image" />
+           />
+        <Button
+            android:id="@+id/btnBack"
+            android:background="@color/colorPrimaryDark"
+            android:text="Back"
+            android:layout_margin="16dp"
+            android:layout_width="@dimen/icon"
+            android:layout_height="wrap_content" />
 
 
     </LinearLayout>
